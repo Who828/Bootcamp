@@ -1,15 +1,15 @@
 #A quadrilateral with opposite right anglesk
 class Rectangle
-  attr_reader :width, :height, :sides
+  attr_reader :length, :breadth, :sides
 
-  def initialize(width, height)
-    @width = width
-    @height = height
+  def initialize(length, breadth)
+    @length = length
+    @breadth = breadth
     @sides = 4
   end
 
   def perimeter
-    2*(width + height)
+    2*(length + breadth)
   end
 
   def self.square(side)
