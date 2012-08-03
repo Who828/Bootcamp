@@ -16,4 +16,8 @@ class Rectangle
     @length  *= length_factor
     @breadth *= breadth_factor
   end
+
+  def ==(other)
+    length == other.length && breadth == other.breadth
+  end
 end

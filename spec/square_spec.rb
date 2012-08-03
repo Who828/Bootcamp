@@ -11,4 +11,8 @@ describe Square do
 		square.magnify!(1.5)
 		square.side.should == 15
 	end
+
+  it "can compare itself with another square" do
+    Square.new(5).should == Square.new(5)
+  end
 end

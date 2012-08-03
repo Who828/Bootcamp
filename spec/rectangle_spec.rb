@@ -19,6 +19,10 @@ describe Rectangle do
     rect.length.should == 15
     rect.breadth.should == 30
   end
+
+  it "can compare itself with another rectangle" do
+    Rectangle.new(10,20).should == Rectangle.new(10,20)
+  end
 end
 
   

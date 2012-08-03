@@ -14,4 +14,8 @@ class Square
 	def magnify!(side_factor)
 		@side *= side_factor
 	end
+
+  def ==(other)
+    side == other.side
+  end
 end
