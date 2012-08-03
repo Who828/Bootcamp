@@ -1,4 +1,4 @@
-#A quadrilateral with opposite right anglesk
+#A quadrilateral with opposite right angles
 class Rectangle
   attr_reader :length, :breadth, :sides
 
@@ -12,7 +12,12 @@ class Rectangle
     2 * (length + breadth)
   end
 
-  def self.square(side)
-  	Rectangle.new(side, side)
+  def magnify(length_factor, breadth_factor)
+    Rectangle.new(length_factor * @length, breadth_factor * @breadth)
+  end
+
+  def ==(other)
+    @length = other.length
+    @breadth = other.breadth
   end
 end
