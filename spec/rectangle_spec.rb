@@ -12,5 +12,12 @@ describe Rectangle do
     rect = Rectangle.new(10,20)
     rect.perimeter.should == 60
   end
+
+  context "Square" do
+    it "computes perimeter" do
+      square = Rectangle.square(10)
+      square.perimeter.should == 40
+    end
+  end
 end
 

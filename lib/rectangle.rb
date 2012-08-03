@@ -11,4 +11,8 @@ class Rectangle
   def perimeter
     2*(width + height)
   end
+
+  def self.square(side)
+  	Rectangle.new(side, side)
+  end
 end
