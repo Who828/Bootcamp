@@ -1,15 +1,17 @@
-require 'rectangle'
-
 #A Rectangle with all the sides equal
 
-class Square < Rectangle
-	
+class Square
+	attr_reader :side
+
 	def initialize(side)
 		@side = side
-		super(side, side)
 	end
 
-	def magnify(side_factor)
-		Square.new(side_factor * @side)
+	def perimeter
+		4 * side
+	end
+
+	def magnify!(side_factor)
+		@side *= side_factor
 	end
 end

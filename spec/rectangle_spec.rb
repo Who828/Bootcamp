@@ -15,7 +15,9 @@ describe Rectangle do
 
   it "can magnify itself" do
     rect = Rectangle.new(10,20)
-    rect.magnify(1.5, 1.5).should == Rectangle.new(15, 30)
+    rect.magnify!(1.5, 1.5)
+    rect.length.should == 15
+    rect.breadth.should == 30
   end
 end
 

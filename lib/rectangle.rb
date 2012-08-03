@@ -12,12 +12,8 @@ class Rectangle
     2 * (length + breadth)
   end
 
-  def magnify(length_factor, breadth_factor)
-    Rectangle.new(length_factor * @length, breadth_factor * @breadth)
-  end
-
-  def ==(other)
-    @length = other.length
-    @breadth = other.breadth
+  def magnify!(length_factor, breadth_factor)
+    @length  *= length_factor
+    @breadth *= breadth_factor
   end
 end

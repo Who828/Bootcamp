@@ -8,6 +8,7 @@ describe Square do
 
 	it "magnifies itself" do
 		square = Square.new(10)
-		square.magnify(1.5).should == Square.new(15)
+		square.magnify!(1.5)
+		square.side.should == 15
 	end
 end
