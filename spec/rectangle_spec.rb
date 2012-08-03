@@ -22,6 +22,7 @@ describe Rectangle do
 
   it "can compare itself with another rectangle" do
     Rectangle.new(10,20).should == Rectangle.new(10,20)
+    Rectangle.new(10,21).should_not == Rectangle.new(10,20)
   end
 end
 

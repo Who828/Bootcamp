@@ -14,5 +14,6 @@ describe Square do
 
   it "can compare itself with another square" do
     Square.new(5).should == Square.new(5)
+    Square.new(5).should_not == Square.new(6)
   end
 end
