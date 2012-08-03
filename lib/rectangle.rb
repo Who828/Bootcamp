@@ -9,7 +9,7 @@ class Rectangle
   end
 
   def perimeter
-    2*(length + breadth)
+    2 * (length + breadth)
   end
 
   def self.square(side)
